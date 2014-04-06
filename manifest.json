@@ -1,19 +1,18 @@
 {
-  // Required
   "manifest_version": 2,
   "name": "Habrahabr flame hider",
   "version": "0.0.1",
 
-  // Script
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+
   "content_scripts": [{
         "matches": ["http://habrahabr.ru/*","https://habrahabr.ru/*"],
         "js": ["jquery.min.js","script.js"],
 		"run_at": "document_end"
      }],
-	 
-  "permissions": ["tabs","http://habrahabr.ru/","https://habrahabr.ru/"],
-  
-  "icons": { "16": "icon16.png",
-           "48": "icon48.png",
-          "128": "icon128.png" }
+
+  "permissions": ["tabs","http://habrahabr.ru/","https://habrahabr.ru/"]  
 }
+  

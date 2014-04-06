@@ -1,5 +1,5 @@
 arr = $('.comment_item');
-for(i=0; i < arr.length; i++) 
+for(i=0; i < arr.length; i++) {
 	$(arr[i]).children('.comment_body').children('.info').children('.clear ').before(
 		'<div style="padding-top: 3px;text-decoration: none;">'+
 			'<a href=\"javascript:$(\'#'+arr[i].id+'\').children(\'.reply_comments\').hide();' + 
@@ -16,3 +16,4 @@ for(i=0; i < arr.length; i++)
 			'style="text-decoration: none;margin-left: 5px; display: none;">[+]</a>' +
 		'</div>'
 	);
+}
